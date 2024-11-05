@@ -56,6 +56,7 @@
 
     .section_sobre__content {
         padding: 0px 40px;
+        text-align: start;
 
         .section_sobre__content_title {
             .format_title();

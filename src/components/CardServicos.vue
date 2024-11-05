@@ -76,7 +76,7 @@ const services = ref<Service[]>([
 
         @media (min-width: 1200px) {
             height: 358px;
-            width: 330px;
+            width: 270px;
         }
 
         .service_img {

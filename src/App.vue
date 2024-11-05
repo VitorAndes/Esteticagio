@@ -38,6 +38,11 @@ import SobreComponent from './components/SobreComponent.vue';
       width: 100%;
       padding: 2rem;
     }
+
+    @media (min-width: 1380px) {
+      width: max(1300px);
+      padding: 2rem;
+    }
   }
 }
 </style>
