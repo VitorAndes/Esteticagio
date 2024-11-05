@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { MessageCircle } from 'lucide-vue-next';
-import { Instagram } from 'lucide-vue-next';
-</script>
-
 <template>
     <div id="section_contato">
         <h1 class="section_title">Entre em contato</h1>
