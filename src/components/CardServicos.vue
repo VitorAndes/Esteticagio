@@ -45,24 +45,50 @@ const services = ref<Service[]>([
 
 #services_container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 12px;
+
+    @media (min-width:768px) {
+        // justify-content: center;
+        // flex-wrap: nowrap;
+    }
 
     .service_card {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         justify-content: space-around;
 
-        .shadow_gold();
-        height: 388px;
-        width: 300px;
+        gap: 5px;
+        height: 250px;
+        width: 170px;
+        padding: 4px;
         background: @bg_secondary;
         border-radius: @border_radius;
+        .shadow_gold();
+
+        @media (min-width: 768px) {
+            height: 288px;
+            width: 200px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 358px;
+            width: 330px;
+        }
 
         .service_img {
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             color: @text_secondary;
+
+            @media (min-width: 768px) {
+                width: 100px;
+                height: 100px;
+
+            }
         }
 
         .service_title {

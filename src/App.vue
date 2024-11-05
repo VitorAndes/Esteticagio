@@ -32,8 +32,12 @@ import SobreComponent from './components/SobreComponent.vue';
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: max(1300px);
-    padding: 2rem;
+    // width: 100%;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      padding: 2rem;
+    }
   }
 }
 </style>

@@ -6,12 +6,12 @@
         <div class="section_contatos">
             <button>
                 <a href="https://wa.me/559285619810" target="_blank">
-                    <img src="/assets/whatssap.svg" width="32" height="32" alt="logo do whatssap">
+                    <img src="/assets/whatssap.svg" alt="logo do whatssap">
                     Entrar em contato
                 </a>
             </button>
             <a href="https://www.instagram.com/esteticagio_/" target="_blank">
-                <img src="/assets/instagram.svg" width="32" height="32" alt="logo do instagram">
+                <img src="/assets/instagram.svg" alt="logo do instagram">
                 esteticagio_
             </a>
         </div>
@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding: 12px;
 
     .section_title {
         .format_title();
@@ -34,7 +35,7 @@
 
     .section_description {
         .format_description();
-        width: 500px;
+        padding-right: 0px 12px;
         margin-bottom: 25px;
     }
 
@@ -48,11 +49,15 @@
             align-items: center;
             gap: 10px;
             border: none;
+            padding: 7px 11px;
             border-radius: @border_radius;
-            padding: 15px 22px;
             background: @bg_primary ;
             cursor: pointer;
             transition: all 1s;
+
+            @media (min-width: 768px) {
+                padding: 15px 22px;
+            }
 
 
 
@@ -74,6 +79,10 @@
             color: @text_secondary;
             cursor: pointer;
             transition: all 1s;
+
+            img {
+                width: 22px;
+            }
 
             &:hover {
                 color: @text_primary;

@@ -1,41 +1,54 @@
     // Text-colors
     @text_primary: #D2A654;
-    @text_secondary: #000000;
-    @text_terciary:#C27B70;
+    @text_secondary: #2a2110;
+    @text_terciary: #C27B70;
     @text_span: #FFFFFF;
 
     // Background-colors
     @gradient_primary: #D2A654;
-    @gradient_secondary:#C27B70;
-    @bg_primary:#31F397;
-    @bg_secondary:#F8FAEA;
-    @bg_terciary:#FFFFFF;
+    @gradient_secondary: #C27B70;
+    @bg_primary: #31F397;
+    @bg_secondary: #F8FAEA;
+    @bg_terciary: #FFFFFF;
 
     // Fonts
     @font_title: "Marcellus SC", serif;
     @font_primary: "Marcellus", serif;
-    
+
     // Border-radius
-    @border_radius:8px;
+    @border_radius: 8px;
 
 
-    .shadow_gold{
+    .clamp-font(@min-size, @preferred-size, @max-size) {
+        font-size: @min-size;
+
+        @media (min-width: 768px) {
+            font-size: @preferred-size;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: @max-size;
+        }
+    }
+
+
+    .shadow_gold {
         -webkit-box-shadow: 2px 5px 10px 0px rgba(210, 166, 84, 1);
         -moz-box-shadow: 2px 5px 10px 0px rgba(210, 166, 84, 1);
-        box-shadow: 2px 5px 10px 0px rgba(210, 166, 84, 1);    
+        box-shadow: 2px 5px 10px 0px rgba(210, 166, 84, 1);
     }
 
-    .format_description{
+    .format_description {
         font-family: @font_primary;
-        font-size: 20px;
+        .clamp-font(10px, 14px, 20px);
     }
 
-    .format_title_card{
+    .format_title_card {
         font-family: @font_title;
-        font-size: 24px;
+        .clamp-font(14px, 16px, 24px);
     }
 
-    .format_title{
+    .format_title {
         font-family: @font_title;
-        font-size: 36px;    
+        .clamp-font(16px, 20px, 36px);
     }

@@ -30,16 +30,28 @@
 
 #section_sobre {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
     align-items: center;
-    height: 500px;
     width: 100%;
 
-    .section_sobre__avatar {
-        width: 500px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
         height: 500px;
+    }
+
+    .section_sobre__avatar {
+        width: 200px;
+        height: 250px;
         border-radius: @border_radius;
-        .shadow_gold()
+
+        .shadow_gold();
+
+        @media (min-width: 768px) {
+            height: 500px;
+            width: 500px;
+        }
     }
 
     .section_sobre__content {
@@ -48,7 +60,7 @@
         .section_sobre__content_title {
             .format_title();
             color: @text_primary;
-            margin-bottom: 12px;
+            margin-bottom: 24px;
         }
 
         .section_sobre__content_description {

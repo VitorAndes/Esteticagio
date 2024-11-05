@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CardServicos from "./CardServicos.vue"    
+import CardServicos from "./CardServicos.vue";
 </script>
 
 <template>
@@ -19,7 +19,11 @@ import CardServicos from "./CardServicos.vue"
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    gap: 12px;
+
+    @media (min-width: 768px) {
+        height: 100%;
+    }
 
     .servicos_title {
         .format_title();
@@ -29,7 +33,7 @@ import CardServicos from "./CardServicos.vue"
 
     .servicos_description {
         .format_description();
-        width: 500px;
+        padding: 0px 12px;
         text-align: center;
         margin-bottom: 24px;
     }

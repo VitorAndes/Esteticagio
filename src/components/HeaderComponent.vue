@@ -14,19 +14,25 @@
 @import "/src/styles/variables.less";
 
 #header {
-    padding: 0px 2rem;
+    padding: 0px 12px;
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    height: 90px;
+
+    align-items: center;
+    height: 60px;
     position: sticky;
     top: 0;
     background: @bg_terciary;
 
+    @media (min-width: 768px) {
+        padding: 0px 2rem;
+        justify-content: space-between;
+        align-items: baseline;
+        height: 90px;
+    }
+
     .header_title {
-        font-family: @font_title;
-        font-size: 40px;
+        .format_title();
         color: @text_primary;
 
         span {
@@ -35,10 +41,14 @@
     }
 
     .navbar {
-        display: flex;
+        display: none;
         align-items: center;
         gap: 1.5rem;
         height: 100%;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
 
         .navbar_item {
             font-family: @font_primary;

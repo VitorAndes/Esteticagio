@@ -4,7 +4,7 @@
             <h1 class="section_title">BELEZA AUTÊNTICA PARA VOCÊ</h1>
             <p class="section_paragraph">especializado em cuidados naturais</p>
             <button class="section_button">
-                <a href="#">Agendar um horário</a>
+                <a href="https://wa.me/559285619810">Agendar um horário</a>
             </button>
         </div>
     </div>
@@ -19,15 +19,25 @@
     justify-content: center;
     align-items: start;
 
-    padding-left: 100px;
+    padding-left: 20px;
     background-image: url('/assets/bg_section_sobre.jpg');
     background-size: cover;
     width: 100%;
-    height: 500px;
     border-radius: @border_radius;
+    height: 260px;
+
+    @media (min-width: 768px) {
+        height: 500px;
+        padding-left: 100px;
+    }
 
     .section_inicio__container {
-        width: 500px;
+        width: 200px;
+
+        @media (min-width: 768px) {
+            width: 500px;
+
+        }
 
         .section_title {
             .format_title();
@@ -43,7 +53,8 @@
 
         .section_button {
             background: linear-gradient(90deg, @bg_terciary 0%, @gradient_primary 100%);
-            padding: 20px 40px;
+
+            padding: 10px 20px;
             border: none;
             border-radius: 8px;
             -webkit-box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 1);
@@ -51,14 +62,18 @@
             box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 1);
             transition: all 1s;
 
+
+            @media (min-width: 768px) {
+                padding: 20px 40px;
+            }
+
             &:hover {
                 scale: 1.0;
                 border: 1px solid @gradient_secondary;
             }
 
             a {
-                font-family: @font_primary;
-                font-size: 24px;
+                .format_description();
                 color: @text_secondary;
             }
         }

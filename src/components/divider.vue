@@ -7,7 +7,11 @@
 @import "/src/styles/variables.less";
 
 #divider {
-    margin: 70px 0px;
+    margin: 30px 0px;
     border-bottom: 2px solid @text_primary;
+
+    @media (min-width: 768px) {
+        margin: 70px 0px;
+    }
 }
 </style>
