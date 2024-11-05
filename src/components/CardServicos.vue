@@ -48,11 +48,7 @@ const services = ref<Service[]>([
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
-
-    @media (min-width:768px) {
-        // justify-content: center;
-        // flex-wrap: nowrap;
-    }
+    margin: auto;
 
     .service_card {
         display: flex;
