@@ -20,7 +20,7 @@
     align-items: start;
 
     padding-left: 100px;
-    background-image: url('../assets/bg_section_sobre.jpg');
+    background-image: url('/assets/bg_section_sobre.jpg');
     background-size: cover;
     width: 100%;
     height: 500px;

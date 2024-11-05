@@ -9,26 +9,26 @@ interface Service {
 
 const services = ref<Service[]>([
     {
-        service_img: '/src/assets/service_mass.svg',
+        service_img: '/assets/service_mass.svg',
         service_title: 'Massagem relaxante',
         service_description: 'Uma experiência de profundo relaxamento que alivia tensões musculares e promove o bem-estar geral.'
     },
     {
-        service_img: '/src/assets/service_henn.svg',
+        service_img: '/assets/service_henn.svg',
         service_title: 'Henna',
         service_description: 'Oferecemos aplicação de henna, proporcionando um resultado natural e duradouro.'
     },
     {
-        service_img: '/src/assets/service_desi.svg',
+        service_img: '/assets/service_desi.svg',
         service_title: 'Design simples',
         service_description: 'Criação de designs e legantes e discretos para realçar a beleza natural das sobrancelhas, cílios ou unhas.'
     },
     {
-        service_img: '/src/assets/service_vent.svg',
+        service_img: '/assets/service_vent.svg',
         service_title: 'Ventosa terapia',
         service_description: 'Técnica milenar que utiliza ventosas para promover a circulação sanguínea, aliviar dores musculares e auxiliar em tratamentos estéticos.'
     }
-]);
+]); 
 </script>
 <template>
     <div id="services_container">

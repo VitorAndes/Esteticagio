@@ -6,12 +6,12 @@
         <div class="section_contatos">
             <button>
                 <a href="https://wa.me/559285619810" target="_blank">
-                    <img src="../assets/whatssap.svg" width="32" height="32" alt="logo do whatssap">
+                    <img src="/assets/whatssap.svg" width="32" height="32" alt="logo do whatssap">
                     Entrar em contato
                 </a>
             </button>
             <a href="https://www.instagram.com/esteticagio_/" target="_blank">
-                <img src="../assets/instagram.svg" width="32" height="32" alt="logo do instagram">
+                <img src="/assets/instagram.svg" width="32" height="32" alt="logo do instagram">
                 esteticagio_
             </a>
         </div>

@@ -3,7 +3,7 @@
 
 <template>
     <div id="section_sobre">
-        <img class="section_sobre__avatar" src="../assets/gio_avatar.png" alt="foto de gio caldeira, esteticista">
+        <img class="section_sobre__avatar" src="/assets/gio_avatar.png" alt="foto de gio caldeira, esteticista">
         <div class="section_sobre__content">
             <h1 class="section_sobre__content_title">Sobre mim</h1>
             <p class="section_sobre__content_description">Sempre fui fascinada pela beleza e pelo poder transformador
