@@ -9,22 +9,22 @@ interface Service {
 
 const services = ref<Service[]>([
     {
-        service_img: './src/assets/service_mass.svg',
+        service_img: '/src/assets/service_mass.svg',
         service_title: 'Massagem relaxante',
         service_description: 'Uma experiência de profundo relaxamento que alivia tensões musculares e promove o bem-estar geral.'
     },
     {
-        service_img: './src/assets/service_henn.svg',
+        service_img: '/src/assets/service_henn.svg',
         service_title: 'Henna',
         service_description: 'Oferecemos aplicação de henna, proporcionando um resultado natural e duradouro.'
     },
     {
-        service_img: './src/assets/service_desi.svg',
+        service_img: '/src/assets/service_desi.svg',
         service_title: 'Design simples',
-        service_description: 'Criação de designs e           legantes e discretos para realçar a beleza natural das sobrancelhas, cílios ou unhas.'
+        service_description: 'Criação de designs e legantes e discretos para realçar a beleza natural das sobrancelhas, cílios ou unhas.'
     },
     {
-        service_img: './src/assets/service_vent.svg',
+        service_img: '/src/assets/service_vent.svg',
         service_title: 'Ventosa terapia',
         service_description: 'Técnica milenar que utiliza ventosas para promover a circulação sanguínea, aliviar dores musculares e auxiliar em tratamentos estéticos.'
     }
@@ -33,7 +33,7 @@ const services = ref<Service[]>([
 <template>
     <div id="services_container">
         <div v-for="service in services" :key="service.service_title" class="service_card">
-            <img :src="service.service_img" alt="" class="service_img">
+            <img :src="service.service_img" alt="icone dos serviços" class="service_img" loading="lazy">
             <h3 class="service_title">{{ service.service_title }}</h3>
             <p class="service_description">{{ service.service_description }}</p>
         </div>
