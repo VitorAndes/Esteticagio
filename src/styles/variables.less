@@ -1,69 +1,71 @@
-    // Text-colors
-    @text_primary: #D2A654;
-    @text_secondary: #23110e;
-    @text_terciary: #C27B70;
-    @text_span: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-    // Background-colors    
-    @gradient_primary: #D2A654;
-    @gradient_secondary: #C27B70;
-    @bg_primary: #31F397;
-    @bg_secondary: #F8FAEA;
-    @bg_terciary: #FFFFFF;
-    @bg_card: #23110e;
+// Text-colors
+@text_primary: #D2A654;
+@text_secondary: #23110e;
+@text_terciary: #C27B70;
+@text_span: #FFFFFF;
 
-    // Fonts
-    @font_title: "Merriweather", serif;
-    @font_description: "Merriweather", serif;
+// Background-colors    
+@gradient_primary: #D2A654;
+@gradient_secondary: #C27B70;
+@bg_primary: #31F397;
+@bg_secondary: #F8FAEA;
+@bg_terciary: #FFFFFF;
+@bg_card: #23110e;
 
-
-    // Border-radius
-    @border_radius: 8px;
+// Fonts
+@font_title: "Merriweather", serif;
+@font_description: "Merriweather", serif;
 
 
-    .clamp-font(@min-size, @preferred-size, @max-size) {
-        font-size: @min-size;
+// Border-radius
+@border_radius: 8px;
 
-        @media (min-width: 768px) {
-            font-size: @preferred-size;
-        }
 
-        @media (min-width: 1200px) {
-            font-size: @max-size;
-        }
+.clamp-font(@min-size, @preferred-size, @max-size) {
+    font-size: @min-size;
+
+    @media (min-width: 768px) {
+        font-size: @preferred-size;
     }
 
-    .background_glass {
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    @media (min-width: 1200px) {
+        font-size: @max-size;
     }
+}
 
-    .shadow_gold {
-        -webkit-box-shadow: 0px 10px 15px 1px @gradient_primary;
-        -moz-box-shadow: 0px 10px 15px 1px @gradient_primary;
-        box-shadow: 0px 10px 15px 1px @gradient_primary;
-    }
+.background_glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .format_description {
-        font-family: @font_description;
-        font-weight: lighter;
-        line-height: 20px;
-        letter-spacing: -.2px;
-        .clamp-font(14px, 16px, 18px);
-    }
+.shadow_gold {
+    -webkit-box-shadow: 0px 10px 15px 1px @gradient_primary;
+    -moz-box-shadow: 0px 10px 15px 1px @gradient_primary;
+    box-shadow: 0px 10px 15px 1px @gradient_primary;
+}
 
-    .format_title_card {
-        font-family: @font_title;
-        font-weight: bolder;
-        letter-spacing: -1px;
-        .clamp-font(20px, 24px, 28px);
-    }
+.format_description {
+    font-family: @font_description;
+    font-weight: lighter;
+    line-height: 20px;
+    letter-spacing: -.2px;
+    .clamp-font(14px, 16px, 18px);
+}
 
-    .format_title {
-        font-family: @font_title;
-        font-weight: bolder;
-        letter-spacing: 1px;
-        .clamp-font(24px, 28px, 32px);
-    }
+.format_title_card {
+    font-family: @font_title;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    .clamp-font(20px, 24px, 28px);
+}
+
+.format_title {
+    font-family: @font_title;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    .clamp-font(24px, 28px, 32px);
+}
