@@ -3,9 +3,11 @@
         <div class="section_inicio__container">
             <h1 class="section_title">BELEZA AUTÊNTICA PARA VOCÊ</h1>
             <p class="section_paragraph">especializada em cuidados naturais</p>
-            <button class="section_button">
-                <a href="https://wa.me/559285619810">Agendar um horário</a>
-            </button>
+            <a href="https://wa.me/559285619810">
+                <button class="section_button">
+                    Agendar um horario
+                </button>
+            </a>
         </div>
     </div>
 </template>
@@ -19,7 +21,7 @@
     justify-content: center;
 
     padding-left: 20px;
-    background-image: url('/assets/bg_section_sobre.jpg');
+    background-image: url('/assets/bg_section_sobre.webp');
     background-size: cover;
     width: 100%;
     border-radius: @border_radius;

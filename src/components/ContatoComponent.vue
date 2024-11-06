@@ -4,12 +4,12 @@
         <p class="section_description">Entre em contato com a Esteticagio, queremos tirar suas dúvidas, ouvir suas
             críticas e sugestões.</p>
         <div class="section_contatos">
-            <button>
-                <a href="https://wa.me/559285619810" target="_blank">
+            <a href="https://wa.me/559285619810" target="_blank">
+                <button>
                     <img src="/assets/whatssap.svg" alt="logo do whatssap">
                     Entrar em contato
-                </a>
-            </button>
+                </button>
+            </a>
             <a href="https://www.instagram.com/esteticagio_/" target="_blank">
                 <img src="/assets/instagram.svg" alt="logo do instagram">
                 esteticagio_
@@ -42,39 +42,17 @@
         align-items: center;
         gap: 22px;
 
-        button {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border: none;
-            padding: 7px 12px;
-            border-radius: @border_radius;
-            background: @bg_primary ;
-            cursor: pointer;
-            transition: all 1s;
-
-            @media (min-width: 768px) {
-                padding: 14px 20px;
-            }
-
-            a {
-                .format_description();
-                color: @text_secondary;
-
-                &:hover {
-                    color: white;
-                }
-            }
-        }
-
         a {
+            .format_description();
+            color: @text_secondary;
+
             .format_description();
             display: flex;
             align-items: center;
             gap: 12px;
             color: @text_secondary;
             cursor: pointer;
-            transition: all 1s;
+            transition: all .2s;
 
             img {
                 width: 22px;
@@ -83,7 +61,31 @@
             &:hover {
                 color: @text_primary;
             }
+
+
+            button {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: none;
+                padding: 7px 12px;
+                border-radius: @border_radius;
+                background: @bg_primary ;
+                cursor: pointer;
+                transition: all .2s;
+
+                @media (min-width: 768px) {
+                    padding: 14px 20px;
+                }
+
+                &:hover {
+                    color: white;
+                    box-shadow: 0px 5px 14px 0px @gradient_secondary;
+                }
+
+            }
         }
+
 
     }
 }

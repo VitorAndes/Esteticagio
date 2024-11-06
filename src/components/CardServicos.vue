@@ -33,8 +33,8 @@ const services = ref<Service[]>([
 <template>
     <div id="services_container">
         <div v-for="service in services" :key="service.service_title" class="service_card">
-            <img :src="service.service_img" alt="icone dos serviços" class="service_img" loading="lazy">
-            <h3 class="service_title">{{ service.service_title }}</h3>
+            <img :src="service.service_img" alt="icone dos serviços" class="service_img">
+            <h2 class="service_title">{{ service.service_title }}</h2>
             <p class="service_description">{{ service.service_description }}</p>
         </div>
     </div>
@@ -58,7 +58,7 @@ const services = ref<Service[]>([
         justify-content: space-evenly;
 
         gap: 5px;
-        height: 200px;
+        height: 280px;
         width: 156px;
         padding: 4px;
         background: @bg_secondary;
@@ -78,7 +78,6 @@ const services = ref<Service[]>([
         .service_img {
             width: 50px;
             height: 50px;
-            color: @text_secondary;
 
             @media (min-width: 768px) {
                 width: 100px;
@@ -89,7 +88,7 @@ const services = ref<Service[]>([
 
         .service_title {
             .format_title_card();
-            color: @text_primary;
+            color: @text_secondary;
         }
 
         .service_description {
