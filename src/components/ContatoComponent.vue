@@ -6,12 +6,12 @@
         <div class="section_contatos">
             <a href="https://wa.me/559285619810" target="_blank">
                 <button>
-                    <img src="/assets/whatssap.svg" alt="logo do whatssap">
+                    <img src="/assets/whatssap.svg" width="22" height="22" alt="logo do whatssap">
                     Entrar em contato
                 </button>
             </a>
             <a href="https://www.instagram.com/esteticagio_/" target="_blank">
-                <img src="/assets/instagram.svg" alt="logo do instagram">
+                <img src="/assets/instagram.svg" width="22" height="22" alt="logo do instagram">
                 esteticagio_
             </a>
         </div>
@@ -54,14 +54,9 @@
             cursor: pointer;
             transition: all .2s;
 
-            img {
-                width: 22px;
-            }
-
             &:hover {
                 color: @text_primary;
             }
-
 
             button {
                 display: flex;

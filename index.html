@@ -2,24 +2,36 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <!-- fontes -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg"> -->
+
+    <!-- Preconnect para Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Carregamento de Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" />
+
+    <!-- Metadescrição -->
     <meta
       name="description"
       content="Transforme sua aparência com nossos tratamentos de estética e cuidados pessoais. Experimente cuidados de pele, massagens relaxantes, e muito mais."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Pré-carregar Imagem de Maior Exibição de Conteúdo -->
+    <link
+      rel="preload"
+      href="./public/assets/bg_section_sobre.webp"
+      as="image"
+    />
+
     <title>Esteticagio.</title>
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/main.ts" defer></script>
   </body>
 </html>
