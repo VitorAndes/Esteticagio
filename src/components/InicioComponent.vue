@@ -1,6 +1,10 @@
+<script setup>
+
+</script>
+
 <template>
     <div id="section_inicio">
-        <div class="section_inicio__container">
+        <div class="section_inicio__container" v-motion-slide-visible-bottom :duration="1000">
             <h1 class="section_title">BELEZA AUTÊNTICA PARA VOCÊ</h1>
             <p class="section_paragraph">especializada em cuidados naturais</p>
             <a href="https://wa.me/559285619810">

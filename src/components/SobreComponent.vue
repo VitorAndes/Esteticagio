@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div id="section_sobre">
+    <div id="section_sobre" v-motion-slide-visible-bottom :duration="1000">
         <img class="section_sobre__avatar" src="/assets/gio_avatar.webp" alt="foto de gio caldeira, esteticista"
             loading="lazy">
         <div class="section_sobre__content">

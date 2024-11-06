@@ -3,7 +3,7 @@ import CardServicos from "./CardServicos.vue";
 </script>
 
 <template>
-    <div id="section_servicos">
+    <div id="section_servicos" v-motion-slide-visible-bottom :duration="1000">
         <h1 class="servicos_title">Serviços</h1>
         <p class="servicos_description">Ofereço uma variedade de serviços estéticos que visam promover o bem-estar
             físico e emocional dos meus

@@ -15,7 +15,7 @@
 
 #header {
     display: flex;
-
+    z-index: 100;
     align-items: center;
     height: 60px;
     padding: 0px 12px;

@@ -1,5 +1,5 @@
 <template>
-    <div id="section_contato">
+    <div id="section_contato" v-motion-slide-visible-bottom :duration="1000">
         <h1 class="section_title">Entre em contato</h1>
         <p class="section_description">Entre em contato com a Esteticagio, queremos tirar suas dúvidas, ouvir suas
             críticas e sugestões.</p>

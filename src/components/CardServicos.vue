@@ -32,7 +32,7 @@ const services = ref<Service[]>([
 </script>
 <template>
     <div id="services_container">
-        <div v-for="service in services" :key="service.service_title" class="service_card">
+        <div v-motion-fade v-for="service in services" :key="service.service_title" class="service_card">
             <img :src="service.service_img" alt="icone dos serviços" class="service_img">
             <h2 class="service_title">{{ service.service_title }}</h2>
             <p class="service_description">{{ service.service_description }}</p>
