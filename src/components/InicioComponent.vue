@@ -23,9 +23,12 @@
     padding-left: 20px;
     background-image: url('/assets/bg_section_sobre.webp');
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 100%;
     border-radius: @border_radius;
     height: 260px;
+
 
     @media (min-width: 768px) {
         height: 500px;
