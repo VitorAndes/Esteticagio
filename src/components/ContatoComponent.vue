@@ -24,19 +24,17 @@
 #section_contato {
     display: flex;
     flex-direction: column;
-    gap: 12px;
     padding: 12px;
 
     .section_title {
         .format_title();
         color: @text_primary;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .section_description {
         .format_description();
-        padding-right: 0px 12px;
-        margin-bottom: 25px;
+        margin-bottom: 16px;
     }
 
     .section_contatos {
@@ -49,17 +47,15 @@
             align-items: center;
             gap: 10px;
             border: none;
-            padding: 7px 11px;
+            padding: 7px 12px;
             border-radius: @border_radius;
             background: @bg_primary ;
             cursor: pointer;
             transition: all 1s;
 
             @media (min-width: 768px) {
-                padding: 15px 22px;
+                padding: 14px 20px;
             }
-
-
 
             a {
                 .format_description();

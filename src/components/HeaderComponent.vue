@@ -14,26 +14,28 @@
 @import "/src/styles/variables.less";
 
 #header {
-    padding: 0px 12px;
-    border-bottom: 1px solid black;
     display: flex;
 
     align-items: center;
     height: 60px;
+    padding: 0px 12px;
     position: sticky;
     top: 0;
     background: @bg_terciary;
 
+    .background_glass();
+
     @media (min-width: 768px) {
         padding: 0px 2rem;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         height: 90px;
     }
 
     .header_title {
         .format_title();
         color: @text_primary;
+        // margin: auto 0;
 
         span {
             color: @text_terciary;
@@ -51,8 +53,7 @@
         }
 
         .navbar_item {
-            font-family: @font_primary;
-            font-size: 24px;
+            .format_description();
             color: @text_primary;
             position: relative;
 
@@ -64,18 +65,17 @@
                 width: 0;
                 height: 2px;
                 border-radius: @border_radius;
-                background-color: black;
-                transition: width 1s;
+                background-color: @gradient_primary;
+                transition: width .2s;
             }
 
             &:hover:before {
                 width: 100%;
-                color: @text_secondary;
             }
 
             &:hover {
                 color: @text_secondary;
-                transition: color 1s;
+                transition: color .2s;
             }
         }
     }

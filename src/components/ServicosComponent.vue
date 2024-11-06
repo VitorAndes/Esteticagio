@@ -19,7 +19,6 @@ import CardServicos from "./CardServicos.vue";
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 12px;
     padding: 0px 40px;
 
     @media (min-width: 768px) {
@@ -29,15 +28,14 @@ import CardServicos from "./CardServicos.vue";
     .servicos_title {
         .format_title();
         color: @text_primary;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
         text-align: start;
 
     }
 
     .servicos_description {
         .format_description();
-
-        margin-bottom: 24px;
+        margin-bottom: 32px;
     }
 
 }

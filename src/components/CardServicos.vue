@@ -55,11 +55,11 @@ const services = ref<Service[]>([
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
         gap: 5px;
-        height: 250px;
-        width: 170px;
+        height: 200px;
+        width: 156px;
         padding: 4px;
         background: @bg_secondary;
         border-radius: @border_radius;
@@ -67,7 +67,7 @@ const services = ref<Service[]>([
 
         @media (min-width: 768px) {
             height: 288px;
-            width: 200px;
+            width: 197px;
         }
 
         @media (min-width: 1200px) {

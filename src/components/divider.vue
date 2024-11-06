@@ -11,7 +11,7 @@
     border-bottom: 2px solid @text_primary;
 
     @media (min-width: 768px) {
-        margin: 70px 0px;
+        margin: 50px 0px;
     }
 }
 </style>

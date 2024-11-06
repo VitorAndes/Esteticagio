@@ -1,10 +1,10 @@
     // Text-colors
     @text_primary: #D2A654;
-    @text_secondary: #2a2110;
+    @text_secondary: #23110e;
     @text_terciary: #C27B70;
     @text_span: #FFFFFF;
 
-    // Background-colors
+    // Background-colors    
     @gradient_primary: #D2A654;
     @gradient_secondary: #C27B70;
     @bg_primary: #31F397;
@@ -12,8 +12,9 @@
     @bg_terciary: #FFFFFF;
 
     // Fonts
-    @font_title: "Marcellus SC", serif;
-    @font_primary: "Marcellus", serif;
+    @font_title: "Merriweather", serif;
+    @font_description: "Merriweather", serif;
+
 
     // Border-radius
     @border_radius: 8px;
@@ -31,24 +32,37 @@
         }
     }
 
+    .background_glass {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
     .shadow_gold {
-        -webkit-box-shadow: 2px 5px 10px 0px rgba(210, 166, 84, 1);
-        -moz-box-shadow: 2px 5px 10px 0px rgba(210, 166, 84, 1);
-        box-shadow: 2px 5px 10px 0px rgba(210, 166, 84, 1);
+        -webkit-box-shadow: 0px 10px 15px 1px @gradient_primary;
+        -moz-box-shadow: 0px 10px 15px 1px @gradient_primary;
+        box-shadow: 0px 10px 15px 1px @gradient_primary;
     }
 
     .format_description {
-        font-family: @font_primary;
-        .clamp-font(10px, 14px, 20px);
+        font-family: @font_description;
+        font-weight: lighter;
+        line-height: 20px;
+        letter-spacing: -.2px;
+        .clamp-font(10px, 14px, 18px);
     }
 
     .format_title_card {
         font-family: @font_title;
+        font-weight: bolder;
+        letter-spacing: -1px;
         .clamp-font(14px, 16px, 24px);
     }
 
     .format_title {
         font-family: @font_title;
-        .clamp-font(16px, 20px, 36px);
+        font-weight: bolder;
+        letter-spacing: 1px;
+        .clamp-font(16px, 30px, 36px);
     }

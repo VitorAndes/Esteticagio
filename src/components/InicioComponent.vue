@@ -2,7 +2,7 @@
     <div id="section_inicio">
         <div class="section_inicio__container">
             <h1 class="section_title">BELEZA AUTÊNTICA PARA VOCÊ</h1>
-            <p class="section_paragraph">especializado em cuidados naturais</p>
+            <p class="section_paragraph">especializada em cuidados naturais</p>
             <button class="section_button">
                 <a href="https://wa.me/559285619810">Agendar um horário</a>
             </button>
@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
 
     padding-left: 20px;
     background-image: url('/assets/bg_section_sobre.jpg');
@@ -32,7 +31,12 @@
     }
 
     .section_inicio__container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
         width: 200px;
+
 
         @media (min-width: 768px) {
             width: 500px;
@@ -42,34 +46,34 @@
         .section_title {
             .format_title();
             color: @text_secondary;
-            margin-bottom: 9px;
+            margin-bottom: 6px;
         }
 
         .section_paragraph {
             .format_description();
             color: @text_span;
-            margin-bottom: 24px;
+            margin-bottom: 12px;
         }
 
         .section_button {
             background: linear-gradient(90deg, @bg_terciary 0%, @gradient_primary 100%);
 
-            padding: 10px 20px;
+            padding: 7px 14px;
             border: none;
             border-radius: 8px;
             -webkit-box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 1);
             -moz-box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 1);
             box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 1);
-            transition: all 1s;
+            transition: all .2s;
 
 
             @media (min-width: 768px) {
-                padding: 20px 40px;
+                padding: 14px 20px;
             }
 
             &:hover {
-                scale: 1.0;
-                border: 1px solid @gradient_secondary;
+                scale: 1;
+                box-shadow: 0px 5px 14px 0px @gradient_secondary;
             }
 
             a {

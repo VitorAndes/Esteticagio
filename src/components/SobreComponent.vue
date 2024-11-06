@@ -10,12 +10,12 @@
                 que
                 ela
                 exerce sobre as pessoas. A estética,
-                para mim, é mais do que uma profissão, é uma verdadeira paixão</p>
+                para mim, é mais do que uma profissão, é uma verdadeira paixão.</p>
             <p class="section_sobre__content_description">A decisão de seguir a carreira de esteticista foi natural,
                 pois
                 me
                 permitiria aliar meu amor pela beleza
-                à oportunidade de ajudar outras pessoas a se sentirem mais confiantes e felizes consigo mesmas</p>
+                à oportunidade de ajudar outras pessoas a se sentirem mais confiantes e felizes consigo mesmas.</p>
             <p class="section_sobre__content_description">A cada dia, me dedico a aprimorar meus conhecimentos e a
                 oferecer o que
                 há de mais moderno e eficaz em
@@ -50,7 +50,7 @@
 
         @media (min-width: 768px) {
             height: 500px;
-            width: 500px;
+            width: 400px;
         }
     }
 
@@ -61,14 +61,13 @@
         .section_sobre__content_title {
             .format_title();
             color: @text_primary;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
         }
 
         .section_sobre__content_description {
             .format_description();
-
             color: @text_secondary;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
     }
 
