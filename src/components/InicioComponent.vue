@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <div id="section_inicio">
         <div class="section_inicio__container" v-motion-slide-visible-bottom :duration="1000">
