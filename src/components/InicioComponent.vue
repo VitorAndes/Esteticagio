@@ -17,11 +17,9 @@
 
 #section_inicio {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    align-items: center;
     padding-left: 20px;
-    background-image: url('/assets/bg_section_sobre.webp');
+    background-image: url('/assets/bg_section_sobre_small.webp?webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -33,6 +31,7 @@
     @media (min-width: 768px) {
         height: 500px;
         padding-left: 100px;
+        background-image: url('/assets/bg_section_sobre.webp?webp');
     }
 
     .section_inicio__container {
