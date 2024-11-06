@@ -2,13 +2,10 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg"> -->
-
-    <!-- Preconnect para Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Carregamento de Fonts -->
+    <!-- Carregar fontes com font-display: swap -->
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -24,14 +21,17 @@
     <!-- Pré-carregar Imagem de Maior Exibição de Conteúdo -->
     <link
       rel="preload"
-      href="/public/assets/bg_section_sobre.webp"
+      href="/assets/bg_section_sobre.webp"
       as="image"
+      type="image/webp"
     />
 
     <title>Esteticagio.</title>
   </head>
   <body>
     <div id="app"></div>
+
+    <!-- Carregar JS com defer para não bloquear renderização -->
     <script type="module" src="/src/main.ts" defer></script>
   </body>
 </html>
